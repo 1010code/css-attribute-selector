@@ -11,5 +11,8 @@ a[target="_blank"] {
 
 ![](https://i.imgur.com/JBOYdee.png)
 
+## 文章
+詳細內容可以參考 [[CSS學習筆記] CSS Attribute Selector 技巧](https://andy6804tw.github.io/2021/03/07/css-attribute-selector/)
+
 ## Reference
 [w3schools CSS Attribute Selectors](https://www.w3schools.com/css/css_attribute_selectors.asp)
