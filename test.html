@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .mode-edit,
+        .mode-maker {
+            display: none;
+        }
+
+        [mode="edit"] .mode-edit,
+        [mode="maker"] .mode-maker {
+            display: block;
+        }
+    </style>
+</head>
+
+<body mode="maker">
+    <header>
+        <h4 class="mode-maker">Music Maker</h4>
+        <h4 class="mode-edit">Music Maker Configuration</h4>
+    </header>
+
+    <main>
+        <button class="mode-maker mdl-button" id="edit">Edit</button>
+        <button class="mode-edit mdl-button mdl-js-button" id="done">Done</button>
+        <p class="hint mode-edit">When complete, press Done.</p>
+    </main>
+
+    <script>
+        function enableEditMode() {
+            document.body.setAttribute('mode', 'edit');
+        }
+        function enableDoneMode() {
+            document.body.setAttribute('mode', 'maker');
+        }
+        document.getElementById('edit').addEventListener('click', enableEditMode);
+        document.getElementById('done').addEventListener('click', enableDoneMode);
+    </script>
+</body>
+
+</html>
