@@ -1,4 +1,4 @@
-# CSS Attribute Selectors
+# CSS Attribute Selector
 `[attribute ="value"]` 選擇器用於選擇具有指定屬性和值的元素。以下範例是選擇所有具有 `target ="_ blank"` 屬性的 `<a>` 元素：
 
 ```css
